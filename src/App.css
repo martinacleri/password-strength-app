@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: linear-gradient(20deg, #FFB6C1, #ADD8E6);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #3F88C5;
+  text-shadow: 0 2px 6px rgba(63, 136, 197, 0.7);
+}
+
+input[type="password"],
+input[type="text"] {
+  min-width: 300px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #FFB6C1;
+  background-color: #FDEFF9;
+  color: #3F88C5;
+  font-size: 1rem;
+  transition: border-color 0.3s, width 0.3s ease-out;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.5);
+}
+
+input:focus {
+  border-color: #3F88C5;
+  outline: none;
+}
+
+input::placeholder {
+  color: #C7C7C7;
+}
+
+button {
+  background-color: #3F88C5;
+  color: #FFFFFF;
+  border: 1px solid #FFB6C1;
+  padding: 0.75rem 1.5rem;
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.5);
+}
+
+button:hover {
+  background-color: #1D3557;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #3F88C5;
+}
+
+.advancedOptions {
+  margin-top: 1.5rem;
+  background-color: #FDEFF9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #3F88C5;
+  box-shadow: 0 2px 6px rgba(63, 136, 197, 0.5);
+}
+
+.advancedOptions h3 {
+  color: #3F88C5;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.advancedOptions label {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #3F88C5;
+}
+
+.advancedOptions input[type="checkbox"] {
+  margin-right: 0.3rem;
+}
+
+.advancedOptions input[type="number"] {
+  width: 55px;
+  margin-left: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #FFB6C1;
+  background-color: #FDEFF9;
+  color: #3F88C5;
+  margin-top: 0.5rem;
+}
+
+.advancedOptions input:focus {
+  border-color: #3F88C5;
+  outline: none;
+}
+
+.advancedOptions button {
+  margin-top: 1rem;
+  background-color: #3F88C5;
+  width: auto;
+}
+
+.advancedOptions button:hover {
+  background-color: #1D3557;
+}
+
+.message {
+  color: #FF3F7F;
+}
+
+@media (min-width: 1024px) {
+  .App {
+    width: 100%;
+  }
+}
